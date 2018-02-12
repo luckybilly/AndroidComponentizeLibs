@@ -21,7 +21,7 @@ android平台上组件化开发的概念近两年非常火热，面试中被问�
 # 对比表
 
 对比项|[CC](https://github.com/luckybilly/CC)|[得到DDComponentForAndroid](https://github.com/luojilab/DDComponentForAndroid)|51信用卡OkDeepLink|[ModularizationArchitecture](https://github.com/SpinyTech/ModularizationArchitecture)|[阿里Arouter](https://github.com/alibaba/Arouter)<br>(网上很多组件化方案的路由引擎，如[AndroidModulePattern](https://github.com/guiying712/AndroidModulePattern))|[聚美组件化方案](https://github.com/JumeiRdGroup/Router)<br>（基于聚美Router）|[ActivityRouter](https://github.com/mzule/ActivityRouter)
----|---|---|---|---|---|---|---
+---|:------:|:------:|:------:|:------:|:------:|:------:|:------:
 开源时间|2017-11|2017-9|2017-6|2017-1|2016-12|2016-9|2016-4
 介绍文章|[wiki](https://github.com/luckybilly/CC/wiki)|[Android彻底组件化方案实践](https://www.jianshu.com/p/1b1d77f58e84)|[Android 组件化 —— 路由设计最佳实践](https://www.jianshu.com/p/8a3eeeaf01e8)|[Android架构思考(模块化、多进程)](http://blog.spinytech.com/2016/12/28/android_modularization/)|[开源最佳实践：Android平台页面路由框架Arouter](https://yq.aliyun.com/articles/71687?spm=5176.100240.searchblog.7.8os9Go)|[聚美组件化实践之路](https://juejin.im/post/5a4b4425518825128654eef4)|[ActivityRouter路由框架：通过注解实现URL打开Activity](https://joyrun.github.io/2016/08/01/ActivityRouter/)
 activity跳转|✅|✅|✅|✅|✅|✅|✅
