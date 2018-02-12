@@ -1,0 +1,2 @@
+# AndroidComponentizeLibs
+多维度对比目前开源的一些Android组件化开发方案
