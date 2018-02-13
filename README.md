@@ -3,13 +3,13 @@
 
 android平台上组件化开发的概念近两年非常火热，面试中被问到的频率也很高。
 
-组件化开发技术产生的背景是：在项目到达一定阶段，就需要降低耦合度、提高可服用性及提高开发效率。相比于模块化开发难以独立测试以及边界模糊难以进行业务隔离、插件化技术黑科技太多兼容性不理想，组件化技术在原生开发的基础上实现了业务隔离及独立编译测试，实现了组件高复用性及可测试性，并大大提高了开发效率。正是因为这个原因让组件化开发的概念大受欢迎。
-
 目前网上关于组件化开发方案的文章、开源库比较多，让很多初学者感到迷茫，不知该从何处入手，自身的业务特性适合使用哪种框架，如果全部都学习一遍成本比较高，而且在学习过程中容易将各方案的一些特性记混淆。
 
 为了让大家能快速对android组件化有个整体的认识，本文将从多个维度对目前网上开源的一些组件化开发方案进行对比，从而更好的区分各组件化方案的特点，快速选择适合自己使用的方案深入学习并使用。
 
 由于篇幅及个人精力所限，只选取了比较有代表性的几个组件化方案进行比较，在github上发布也是为了方便大家[提issue](https://github.com/luckybilly/AndroidComponentizeLibs/issues/new)和[pr](https://github.com/luckybilly/AndroidComponentizeLibs/compare)完善更多组件化方案的对比。
+
+持续更新中，欢迎watch、star
 
 # 对比表
 
@@ -51,3 +51,41 @@ AOP支持|拦截器 + 组件内部Action进行AOP|❌|组件内部Action进行AO
 方案使用的学习成本评估|低|一般|高|一般|一般|一般
 后续维护成本评估|低|一般|高|低|一般|一般
 QQ群|686844583|693097923|无|592278657 / 336755078|108895031|无
+
+
+
+# 表格中框架的相关链接
+---
+
+序号|名称|相关文章
+---|---|---
+1|[CC](https://github.com/luckybilly/CC)|[wiki](https://github.com/luckybilly/CC/wiki)<br>[CC框架实践(1)：实现登录成功再进入目标界面功能](https://github.com/luckybilly/CC/wiki/CC%E6%A1%86%E6%9E%B6%E5%AE%9E%E8%B7%B5(1)%EF%BC%9A%E5%AE%9E%E7%8E%B0%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E5%86%8D%E8%BF%9B%E5%85%A5%E7%9B%AE%E6%A0%87%E7%95%8C%E9%9D%A2%E5%8A%9F%E8%83%BD)<br>[CC框架实践(2)：Fragment和View的组件化](https://github.com/luckybilly/CC/wiki/CC%E6%A1%86%E6%9E%B6%E5%AE%9E%E8%B7%B5(2)%EF%BC%9AFragment%E5%92%8CView%E7%9A%84%E7%BB%84%E4%BB%B6%E5%8C%96)<br>[CC框架实践(3): 让jsBridge更优雅](https://github.com/luckybilly/CC/wiki/CC%E6%A1%86%E6%9E%B6%E5%AE%9E%E8%B7%B5(3):-%E8%AE%A9jsBridge%E6%9B%B4%E4%BC%98%E9%9B%85)
+2|[得到DDComponentForAndroid](https://github.com/luojilab/DDComponentForAndroid)|[Android彻底组件化方案实践](https://www.jianshu.com/p/1b1d77f58e84)
+3|[ModularizationArchitecture](https://github.com/SpinyTech/ModularizationArchitecture)|[Android架构思考(模块化、多进程)](http://blog.spinytech.com/2016/12/28/android_modularization/)<BR>[ModularizationArchitecture 使用教程](http://blog.spinytech.com/2017/02/01/ma_get_start_cn/)
+4|[阿里ARouter](https://github.com/alibaba/ARouter)|[开源最佳实践：Android平台页面路由框架Arouter](https://yq.aliyun.com/articles/71687?spm=5176.100240.searchblog.7.8os9Go)
+5|聚美组件化方案[Demo](https://github.com/yjfnypeu/AndroidComponent)<br>(基于[聚美Router](https://github.com/JumeiRdGroup/Router))|[聚美组件化实践之路](https://juejin.im/post/5a4b4425518825128654eef4)<BR>[Router:一款单品、组件化、插件化全支持的路由框架](https://juejin.im/post/5a37771f6fb9a0450e7636e0)
+6|[ActivityRouter](https://github.com/mzule/ActivityRouter)|[ActivityRouter路由框架：通过注解实现URL打开Activity](https://joyrun.github.io/2016/08/01/ActivityRouter/)
+
+
+# 其它比较有特色的组件化方案简介
+
+
+- 51信用卡路由方案[OkDeepLink](https://www.jianshu.com/p/8a3eeeaf01e8)
+
+    *曾经在作者的github账号上开源，现已删除，作者在博文中提到后续2.0版会放到公司的github账号上，但一直未发布。* [这里](https://github.com/jjerry/OkDeepLink)有个fork版本
+    
+    这个方案中使用aspectJ来实现路由表的自动注册，与其它方案不太一样，不过此方案的作者也打算废弃这种方式，理由是aspectJ还是太重了
+    
+    这个方案文章中还提到了关于路由安全的措施，其中有使用URL中加签名的方式来屏蔽非法访问，类似于客户端连接服务端的http请求对参数进行加密校验
+    
+- 组件总线方案[ModuleBus](https://github.com/cangwang/ModuleBus)
+    
+    介绍文档：[组件化开发跨module交互方式---ModuleBus交互](https://juejin.im/post/58524bd2b123db00655b4e99)
+
+    这个方案的特别之处在于其借鉴了[EventBus](https://github.com/greenrobot/EventBus)的思想，组件的注册/注销和组件调用的事件发送都跟EventBus类似
+    
+- 美柚路由方案[RouterKit](https://github.com/gybin02/RouterKit)
+    
+    这个方案的特别之处在于其组件自动注册的方案：通过apt生成每个module的路由表，然后[复制到app的assets目录](https://github.com/gybin02/RouterKit/blob/master/app/build.gradle#L60:1)，运行的时候遍历asset目录，[反射对应的activity](https://github.com/gybin02/RouterKit/blob/master/jet_router/src/main/java/com/meiyou/router/Router.java#L322:17)
+    
+- 其它（欢迎给我[提issue](https://github.com/luckybilly/AndroidComponentizeLibs/issues/new)或[pr](https://github.com/luckybilly/AndroidComponentizeLibs/compare)补充!）
