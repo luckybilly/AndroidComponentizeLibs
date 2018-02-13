@@ -11,6 +11,12 @@ android平台上组件化开发的概念近两年非常火热，面试中被问�
 
 # 对比表
 
+图片
+
+![组件化开源库对比表](androidComponentize.png)
+
+表格
+
 对比项|[CC](https://github.com/luckybilly/CC)|[得到DDComponentForAndroid](https://github.com/luojilab/DDComponentForAndroid)|[ModularizationArchitecture](https://github.com/SpinyTech/ModularizationArchitecture)|[阿里Arouter](https://github.com/alibaba/Arouter)<br>(网上很多组件化方案的路由引擎，如[AndroidModulePattern](https://github.com/guiying712/AndroidModulePattern))|聚美组件化方案<br>（基于[聚美Router](https://github.com/JumeiRdGroup/Router)）|[ActivityRouter](https://github.com/mzule/ActivityRouter)
 ---|---|---|---|---|---|---
 开源时间|2017-11|2017-9|2017-1|2016-12|2016-9|2016-4
