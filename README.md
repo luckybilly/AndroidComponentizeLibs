@@ -7,7 +7,7 @@ android平台上组件化开发的概念近两年非常火热，面试中被问�
 
 为了让大家能快速对android组件化有个整体的认识，本文将从多个维度对目前网上开源的一些组件化开发方案进行对比，从而更好的区分各组件化方案的特点，快速选择适合自己使用的方案深入学习并使用。
 
-由于篇幅及个人精力所限，只选取了比较有代表性的几个组件化方案进行比较，在github上发布也是为了方便大家[提issue](https://github.com/luckybilly/AndroidComponentizeLibs/issues/new)和[pr](https://github.com/luckybilly/AndroidComponentizeLibs/compare)完善更多组件化方案的对比。
+由于篇幅及个人精力所限，只选取了比较有代表性的几个组件化方案进行比较，对比内容中如有谬误之处，欢迎大家指正，在github上发布也是为了方便大家[提issue](https://github.com/luckybilly/AndroidComponentizeLibs/issues/new)和[pr](https://github.com/luckybilly/AndroidComponentizeLibs/compare)给我,和我一起完善更多组件化方案的对比，降低开发者学习组件化技术的难度。
 
 持续更新中，欢迎watch、star
 
@@ -55,16 +55,16 @@ QQ群|686844583|693097923|无|592278657 / 336755078|108895031|无
 
 
 # 表格中框架的相关链接
----
+
 
 序号|名称|相关文章
 ---|---|---
 1|[CC](https://github.com/luckybilly/CC)|[wiki](https://github.com/luckybilly/CC/wiki)<br>[CC框架实践(1)：实现登录成功再进入目标界面功能](https://github.com/luckybilly/CC/wiki/CC%E6%A1%86%E6%9E%B6%E5%AE%9E%E8%B7%B5(1)%EF%BC%9A%E5%AE%9E%E7%8E%B0%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E5%86%8D%E8%BF%9B%E5%85%A5%E7%9B%AE%E6%A0%87%E7%95%8C%E9%9D%A2%E5%8A%9F%E8%83%BD)<br>[CC框架实践(2)：Fragment和View的组件化](https://github.com/luckybilly/CC/wiki/CC%E6%A1%86%E6%9E%B6%E5%AE%9E%E8%B7%B5(2)%EF%BC%9AFragment%E5%92%8CView%E7%9A%84%E7%BB%84%E4%BB%B6%E5%8C%96)<br>[CC框架实践(3): 让jsBridge更优雅](https://github.com/luckybilly/CC/wiki/CC%E6%A1%86%E6%9E%B6%E5%AE%9E%E8%B7%B5(3):-%E8%AE%A9jsBridge%E6%9B%B4%E4%BC%98%E9%9B%85)
-2|[得到DDComponentForAndroid](https://github.com/luojilab/DDComponentForAndroid)|[Android彻底组件化方案实践](https://www.jianshu.com/p/1b1d77f58e84)
+2|[得到DDComponentForAndroid](https://github.com/luojilab/DDComponentForAndroid)|[Android彻底组件化方案实践](https://www.jianshu.com/p/1b1d77f58e84)<br>组件化设计思路 [浅谈Android组件化](https://mp.weixin.qq.com/s/RAOjrpie214w0byRndczmg)<br>原理解释文章[Android彻底组件化方案实践](http://www.jianshu.com/p/1b1d77f58e84)<br>demo解读文章[Android彻底组件化demo发布](http://www.jianshu.com/p/59822a7b2fad)
 3|[ModularizationArchitecture](https://github.com/SpinyTech/ModularizationArchitecture)|[Android架构思考(模块化、多进程)](http://blog.spinytech.com/2016/12/28/android_modularization/)<BR>[ModularizationArchitecture 使用教程](http://blog.spinytech.com/2017/02/01/ma_get_start_cn/)
 4|[阿里ARouter](https://github.com/alibaba/ARouter)|[开源最佳实践：Android平台页面路由框架Arouter](https://yq.aliyun.com/articles/71687?spm=5176.100240.searchblog.7.8os9Go)
 5|聚美组件化方案[Demo](https://github.com/yjfnypeu/AndroidComponent)<br>(基于[聚美Router](https://github.com/JumeiRdGroup/Router))|[聚美组件化实践之路](https://juejin.im/post/5a4b4425518825128654eef4)<BR>[Router:一款单品、组件化、插件化全支持的路由框架](https://juejin.im/post/5a37771f6fb9a0450e7636e0)
-6|[ActivityRouter](https://github.com/mzule/ActivityRouter)|[ActivityRouter路由框架：通过注解实现URL打开Activity](https://joyrun.github.io/2016/08/01/ActivityRouter/)
+6|[ActivityRouter](https://github.com/mzule/ActivityRouter)|[ActivityRouter路由框架：通过注解实现URL打开Activity](https://joyrun.github.io/2016/08/01/ActivityRouter/)<br>[通过 URL 打开 Activity](https://mzule.github.io/2016/04/11/%E9%80%9A%E8%BF%87URL%E6%89%93%E5%BC%80Activity/)
 
 
 # 其它比较有特色的组件化方案简介
@@ -82,7 +82,7 @@ QQ群|686844583|693097923|无|592278657 / 336755078|108895031|无
     
     介绍文档：[组件化开发跨module交互方式---ModuleBus交互](https://juejin.im/post/58524bd2b123db00655b4e99)
 
-    这个方案的特别之处在于其借鉴了[EventBus](https://github.com/greenrobot/EventBus)的思想，组件的注册/注销和组件调用的事件发送都跟EventBus类似
+    这个方案的特别之处在于其借鉴了[EventBus](https://github.com/greenrobot/EventBus)的思想，组件的注册/注销和组件调用的事件发送都跟EventBus类似，
     
 - 美柚路由方案[RouterKit](https://github.com/gybin02/RouterKit)
     
