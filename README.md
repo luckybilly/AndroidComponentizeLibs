@@ -1,8 +1,4 @@
-<style type='text/css'>
-table th:first-of-type {
-    width: 1000px;
-}
-</style>
+
 # 前言
 
 android平台上组件化开发的概念近两年非常火热，面试中被问到的频率也很高。
