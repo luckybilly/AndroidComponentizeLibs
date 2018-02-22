@@ -88,4 +88,5 @@ QQ群|686844583|693097923|无|592278657 / 336755078|108895031|无
     
     这个方案的特别之处在于其组件自动注册的方案：通过apt生成每个module的路由表，然后[复制到app的assets目录](https://github.com/gybin02/RouterKit/blob/master/app/build.gradle#L60:1)，运行的时候遍历asset目录，[反射对应的activity](https://github.com/gybin02/RouterKit/blob/master/jet_router/src/main/java/com/meiyou/router/Router.java#L322:17)
     
+    
 - 其它（欢迎给我[提issue](https://github.com/luckybilly/AndroidComponentizeLibs/issues/new)或[pr](https://github.com/luckybilly/AndroidComponentizeLibs/compare)补充!）
